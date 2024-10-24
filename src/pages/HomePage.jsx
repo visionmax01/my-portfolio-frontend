@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import MyExpertise from "../components/ExpertiesComponent";
 import MyCertificateHome from "../components/MyCertificateHome";
+import Footer from "../components/Footer";
 
 const HomePage = ({ darkMode }) => {
   const [downloading, setDownloading] = useState(false);
@@ -34,6 +35,7 @@ const handleDownloadCv = () => {
 
 
   return (
+    <>
     <div className="lg:mt-12 mt-2 overflow-hidden">
       {/* Mobile Image Section */}
       <motion.div
@@ -145,6 +147,8 @@ const handleDownloadCv = () => {
       <MyCertificateHome darkMode={darkMode}/>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -13,6 +13,7 @@ import movies from "../assets/img/movies.png";
 import netflix from "../assets/img/netflix.png";
 import coding from "../assets/img/coding.jpg";
 import traveling from "../assets/img/traveling.jpg";
+import Footer from "../components/Footer";
 
 const AboutPage = ({ darkMode }) => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const AboutPage = ({ darkMode }) => {
   }, []);
 
   return (
+    <>
     <div className="lg:w-[85%] w-[90%] mx-auto">
       <div className="w-full mx-auto ">
         <div className="">
@@ -242,6 +244,9 @@ const AboutPage = ({ darkMode }) => {
         </div>
       </div>
     </div>
+      <Footer/>
+    </>
+
   );
 };
 
