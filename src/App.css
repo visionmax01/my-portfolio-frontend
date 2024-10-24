@@ -1,0 +1,19 @@
+
+html, body {
+  height: 100%;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
